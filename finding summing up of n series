@@ -1,16 +1,9 @@
 #include<stdio.h>
-int main()
-{
-	int n,sum,c,var;
-	printf("enter the number of integers you want to add:\n");
-	scanf("%d",&n);
-	printf("enter  numbers to add:\n",var);
-	for(c=1;c<=n;c++)
-	{
-	scanf("%d",&var);
-	sum=sum+var;
-    }
-	printf("sum of entered integers:%d\n",sum);
-	getch();
-	return 0;
+int main() {
+   int n, sum = 0;
+   printf("Enter no of terms: ");
+   scanf("%d", & n);
+   sum = (n * (n + 1)) / 2;
+   printf("Sum: %d\n", sum);
+   return 0;
 }
